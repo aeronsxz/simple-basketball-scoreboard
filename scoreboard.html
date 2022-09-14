@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scoreboard.css">
+  <title>Solo Project - Basketball Scoreboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1>BASKETBALL SCOREBOARD</h1>
+    <h1 class="text"></h1>
+    <div class="scoreboard">
+       <div class="team-container">
+          <h2 class="text">HOME</h2>
+          <div class="one">
+             <p class="pts" id="home-pts">0</p>
+             <p class="pts-shadow">000</p>
+          </div>
+          <div class="two">
+             <button id="one-pt" onclick="homeAdd1pt()">+1</button>
+             <button id="two-pts" onclick="homeAdd2pt()">+2</button>
+             <button id="three-pts" onclick="homeAdd3pt()">+3</button>
+          </div>
+       </div>
+       <button class="resetGame" id="resetGame1" onclick="resetGame()">RESET</button>
+       <div class="quarter">
+          <button class = "gameQuarter" id = "quarterInc" onclick="quarterIncrement()">0</button>
+      </div>
+       <div class="team-container">
+          <h2 class="text">GUEST</h2>
+          <div class="one">
+             <p class="pts" id="guest-pts">0</p>  
+             <p class="pts-shadow">000</p>
+          </div>
+          <div class="two">
+             <button id="one-pt" onclick="guestAdd1pt()">+1</button>
+             <button id="two-pts" onclick="guestAdd2pt()">+2</button>
+             <button id="three-pts" onclick="guestAdd3pt()">+3</button>
+          </div>
+       </div>
+    </div>
+  </div>
+  <footer>
+    <p class="footer">Website made as part of the JavaScript Course provided by <a href="https://scrimba.com/">Scrimba</a></p>
+  </footer>
+  <script src="scoreboard.js"></script>
+</body>
+
+</html>
+
