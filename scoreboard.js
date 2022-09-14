@@ -39,6 +39,9 @@ function resetGame() {
     homePts.textContent = 0
     guestPts.textContent = 0
     quarterIncre.textContent = 0
+    homeCount = 0
+    guestCount = 0
+    quarter = 0
 }
 
 function quarterIncrement() {
